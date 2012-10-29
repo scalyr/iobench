@@ -47,8 +47,6 @@ Each thread executes these operations in parallel. So for instance if threadCoun
 
 Threadspecs can be combined using periods, e.g. "read,3,1K,1K.write,1,4K,4K". This calls for three threads to perform 1K reads, and simultaneously one thread to perform 4K writes.
 
-***reference blog post describing output format
-
 Additional options:
 
 * -threadCounts=2,4,6,8
@@ -73,7 +71,7 @@ Additional options:
 
 * -json
 
-    If this option is specified, then when the program is finished, it prints a JSON object containing a complete description of the run -- its parameters and summarized results.
+    If this option is specified, then when the program is finished, it prints a JSON object containing a complete description of the run -- its parameters and summarized results. The format is described in <http://blog.scalyr.com/2012/10/29/ec2-benchmark-followup-source-data/>.
 
 When individual operations are being logged, the following format is used:
 
